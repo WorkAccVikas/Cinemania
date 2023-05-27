@@ -1,0 +1,2 @@
+1. Use TMDB API
+https://developer.themoviedb.org/reference/movie-popular-list
