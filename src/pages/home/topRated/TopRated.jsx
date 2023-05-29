@@ -7,6 +7,8 @@ import SwitchTabs from "../../../components/switchTabs/SwitchTabs";
 import useFetch from "../../../hooks/useFetch";
 
 const TopRated = () => {
+  console.log("TopRated Section");
+
   const [endpoint, setEndpoint] = useState("movie");
 
   const { data, loading } = useFetch(`/${endpoint}/top_rated`);
