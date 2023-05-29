@@ -10,7 +10,7 @@ import Home from "./pages/home/Home";
 import Details from "./pages/details/Details";
 import Explore from "./pages/explore/Explore";
 import SearchResult from "./pages/serachResult/SearchResult";
-import PageNotFound from "./pages/404/PageNotFound.jsx";
+import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   // Todo : To save value
