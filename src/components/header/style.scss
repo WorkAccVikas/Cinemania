@@ -33,6 +33,20 @@
       height: 50px;
     }
   }
+  .logoImg {
+    background: transparent
+      url("../../assets/logo-background.gif") no-repeat center
+      center;
+    font-size: 24px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    @include md {
+      font-size: 36px;
+    }
+  }
   .menuItems {
     list-style-type: none;
     display: none;
