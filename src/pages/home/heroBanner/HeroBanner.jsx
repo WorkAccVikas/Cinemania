@@ -7,7 +7,7 @@ import Img from "../../../components/lazyLoadImage/Img";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 
 const HeroBanner = () => {
-  console.log("HeroBanner  : Render");
+  // console.log("HeroBanner  : Render");
   // eslint-disable-next-line no-unused-vars
   const [background, setBackground] = useState("");
   const [query, setQuery] = useState("");
@@ -15,7 +15,7 @@ const HeroBanner = () => {
   const { url } = useSelector((state) => state.home);
 
   const { data, loading } = useFetch("/movie/upcoming");
-  console.log("Data = ", data);
+  // console.log("Data = ", data);
 
   useEffect(() => {
     const bg =

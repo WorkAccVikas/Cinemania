@@ -10,6 +10,7 @@ import ContentWrapper from "../contentWrapper/ContentWrapper";
 import logo from "../../assets/movix-logo.svg";
 
 const Header = () => {
+  // console.count("Header Section");
   const [show, setShow] = useState("top");
   const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -25,7 +26,7 @@ const Header = () => {
   const controlNavbar = () => {
     if (window.scrollY > 200) {
       if (window.scrollY > lastScrollY && !mobileMenu) {
-        console.log("Yes = ", window.scrollY, lastScrollY);
+        // console.log("Yes = ", window.scrollY, lastScrollY);
         setShow("hide");
       } else {
         setShow("show");

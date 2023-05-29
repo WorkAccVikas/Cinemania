@@ -17,17 +17,17 @@ function App() {
   const dispatch = useDispatch();
   // Todo : To get value
   const { url } = useSelector((state) => state.home);
-  console.log("url = ", url);
+  // console.log("url = ", url);
 
   useEffect(() => {
-    console.log("In useEffect");
+    // console.log("In useEffect");
     fetchApiConfig();
     genresCall();
   }, []);
 
   const fetchApiConfig = () => {
     fetchDataFromApi("/configuration").then((res) => {
-      console.log("Result = ", res);
+      // console.log("Result = ", res);
       const url = {
         backdrop: res.images.secure_base_url + "original",
         poster: res.images.secure_base_url + "original",
@@ -48,11 +48,11 @@ function App() {
 
     let data = await Promise.all(promises);
 
-    console.log("Rani = ", data);
+    // console.log("Rani = ", data);
     data.map(({ genres }) => {
       return genres.map((item) => (allGenres[item.id] = item));
     });
-    console.log("Rani = ", allGenres);
+    // console.log("Rani = ", allGenres);
     dispatch(getGenres(allGenres));
   };
 

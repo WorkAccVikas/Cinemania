@@ -7,7 +7,7 @@ import SwitchTabs from "../../../components/switchTabs/SwitchTabs";
 import useFetch from "../../../hooks/useFetch";
 
 const Popular = () => {
-  console.log("Popular Section");
+  // console.log("Popular Section");
   const [endpoint, setEndpoint] = useState("movie");
 
   const { data, loading } = useFetch(`/${endpoint}/popular`);
